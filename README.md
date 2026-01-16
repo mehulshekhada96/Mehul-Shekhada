@@ -82,9 +82,15 @@ CONTACT_EMAIL=mehulshekhada96@gmail.com
 
 # Site URL (for sitemap and SEO)
 NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+
+# Google Analytics (optional)
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
 
-**Note:** Get your Resend API key from [https://resend.com](https://resend.com) (free tier: 100 emails/day). See `CONTACT_FORM_SETUP.md` for detailed setup instructions.
+**Notes:**
+- Get your Resend API key from [https://resend.com](https://resend.com) (free tier: 100 emails/day)
+- See `CONTACT_FORM_SETUP.md` for contact form setup
+- See `ANALYTICS_SETUP.md` for analytics setup (Vercel Analytics works automatically on Vercel)
 
 ## Deployment
 
