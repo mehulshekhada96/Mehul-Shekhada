@@ -12,14 +12,14 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <div className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
+    <div className="pt-24 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-4">Projects</h1>
-        <p className="text-slate-400 mb-12 text-lg">
+        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Projects</h1>
+        <p className="text-slate-400 mb-8 sm:mb-12 text-base sm:text-lg">
           A collection of projects I've built, from SaaS products to developer tools.
         </p>
 
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {/* Yard Management System - Featured */}
           <ProjectCard
             title="Yard Management System"

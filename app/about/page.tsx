@@ -14,16 +14,16 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
+    <div className="pt-24 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-8 mb-8 sm:mb-12">
           <ProfilePhoto size="lg" />
           <div className="flex-1">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
-              <h1 className="text-4xl font-bold text-white">About</h1>
+              <h1 className="text-3xl sm:text-4xl font-bold text-white">About</h1>
               <ResumeDownload variant="button" className="w-full sm:w-auto" />
             </div>
-            <p className="text-slate-300 text-lg">
+            <p className="text-slate-300 text-base sm:text-lg">
               Software Engineer (MERN Stack | Backend-Focused) with 5+ years of experience building scalable, 
               production-grade systems. Currently at <strong className="text-indigo-400">PortPro Technologies</strong>, 
               building critical backend modules for a US-based logistics product. Focused on backend systems, 
@@ -33,8 +33,8 @@ export default function About() {
         </div>
         
         {/* Journey Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-white mb-6">My Journey</h2>
+        <section className="mb-12 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl font-semibold text-white mb-6">My Journey</h2>
           <div className="space-y-6 text-slate-300">
             <div>
               <h3 className="text-lg font-semibold text-white mb-2">Engineering Background</h3>
@@ -54,6 +54,7 @@ export default function About() {
               </p>
               <ul className="list-disc list-inside mt-2 space-y-1 text-slate-300">
                 <li><strong className="text-indigo-400">Yard Management System</strong> - Full-featured system with visual yard builder, gate operations, and real-time synchronization</li>
+                <li><strong className="text-indigo-400">ETL & Data Integration</strong> - Built real-time data synchronization from MongoDB to PostgreSQL using Hevo Data with Python scripts, normalized arrays using PostgreSQL crons, triggers, and functions</li>
                 <li>API-driven flows and route optimization</li>
                 <li>Invoicing components and integrations</li>
                 <li>Internal tools and system improvements</li>
@@ -101,9 +102,9 @@ export default function About() {
         </section>
 
         {/* Philosophy Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-white mb-6">Philosophy</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section className="mb-12 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl font-semibold text-white mb-6">Philosophy</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <div className="bg-slate-900 border border-slate-800 rounded-lg p-6">
               <Target className="w-6 h-6 text-indigo-400 mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">Long-Term Thinking</h3>
@@ -125,9 +126,9 @@ export default function About() {
         </section>
 
         {/* Achievements & Strengths */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-white mb-6">Achievements & Strengths</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section className="mb-12 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl font-semibold text-white mb-6">Achievements & Strengths</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <div className="bg-slate-900 border border-slate-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-white mb-3">Key Achievements</h3>
               <ul className="space-y-2 text-slate-300 text-sm">
@@ -152,7 +153,7 @@ export default function About() {
 
         {/* Current Focus */}
         <section>
-          <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 rounded-lg p-8">
+          <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 rounded-lg p-6 sm:p-8">
             <Rocket className="w-8 h-8 text-indigo-400 mb-4" />
             <h3 className="text-xl font-semibold text-white mb-3">Current Focus</h3>
             <p className="text-slate-300 mb-4">

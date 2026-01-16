@@ -33,12 +33,12 @@ export default function ProjectCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className={`bg-slate-900 border border-slate-800 rounded-lg p-6 hover:border-indigo-500/50 transition-colors ${
-        featured ? "ring-2 ring-indigo-500/20" : ""
+      className={`group bg-gradient-to-br from-slate-900 to-slate-800/50 border border-slate-800 rounded-xl p-4 sm:p-6 hover:border-indigo-500/50 transition-all hover:shadow-lg hover:shadow-indigo-500/10 hover:-translate-y-1 ${
+        featured ? "ring-2 ring-indigo-500/30 bg-gradient-to-br from-indigo-950/20 to-slate-900" : ""
       }`}
     >
       <div className="flex justify-between items-start mb-4">
-        <h3 className="text-2xl font-bold text-white">{title}</h3>
+        <h3 className="text-xl sm:text-2xl font-bold text-white">{title}</h3>
         {status && (
           <span className="px-3 py-1 text-xs font-medium bg-indigo-500/20 text-indigo-400 rounded-full">
             {status}
