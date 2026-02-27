@@ -25,6 +25,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Prevent using owner's email
+    if (email.toLowerCase() === "mehul.shekhada@portpro.io") {
+      return NextResponse.json(
+        { error: "This is the owner's email address. Please use your own email to send a message." },
+        { status: 400 }
+      );
+    }
+
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>", // Update this with your verified domain
